@@ -13,13 +13,13 @@ document.getElementById('add-money-btn').addEventListener('click', function (eve
         const updateBalance = amountNumber + accountBalanceNumber;
         console.log(updateBalance);
         document.getElementById('account-balance').innerHTML = updateBalance;
-    }else{
+    } else {
         alert("Wrong pin or number.");
     }
 });
 
 
-document.getElementById('cash-out-btn').addEventListener('click', function(event){
+document.getElementById('cash-out-btn').addEventListener('click', function (event) {
     event.preventDefault();
     console.log("Btn clicked");
 
@@ -30,10 +30,10 @@ document.getElementById('cash-out-btn').addEventListener('click', function(event
     const accBalance = document.getElementById('account-balance').innerHTML;
     const accBalanceNumber = parseFloat(accBalance);
 
-    if(inputPinNumber == '1212'){
+    if (inputPinNumber == '1212') {
         const updateBal = accBalanceNumber - inputAmountNumber;
         document.getElementById('account-balance').innerHTML = updateBal;
-    }else{
+    } else {
         alert("Wrong pin or number.");
     }
 
